@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Pokemon } from 'C:/Users/Jefferson Pinheiro/source/repos/angular-sandbox/src/_model/Pokemon';
+import { getPokemonImage, getPokemonNumber, Pokemon } from 'C:/Users/Jefferson Pinheiro/source/repos/angular-sandbox/src/_model/Pokemon';
 
 @Component({
   selector: 'app-pokemon-card',
@@ -9,4 +9,7 @@ import { Pokemon } from 'C:/Users/Jefferson Pinheiro/source/repos/angular-sandbo
 export class PokemonCardComponent {
   @Input()
   public pokemon!: Pokemon;
+
+  public getPokemonImage = getPokemonImage;
+  public getPokemonNumber = getPokemonNumber;
 }
